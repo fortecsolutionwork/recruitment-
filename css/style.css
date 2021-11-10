@@ -1050,9 +1050,9 @@ h2 span {
   }
   .newsletter .form-subscribe .input-group input {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 75%;
-            flex: 0 0 75%;
-    max-width: 75%;
+        -ms-flex: 0 0 70%;
+            flex: 0 0 70%;
+    max-width: 70%;
   }
   .newsletter .form-subscribe .input-group-btn {
     -webkit-box-flex: 0;
@@ -1089,6 +1089,9 @@ h2 span {
         -ms-flex: 0 0 35%;
             flex: 0 0 35%;
     max-width: 35%;
+  }
+  header .navbar {
+    height: 100vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
