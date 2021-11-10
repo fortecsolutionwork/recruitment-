@@ -13,12 +13,10 @@ $(".testimonials-slider").slick({
 $(".banner-slider").slick({
   dots: false,
   arrows:false,
-  fade: true,
   autoplay:true,
-  autoplaySpeed:500,
-  cssEase: 'linear',
+  autoplaySpeed:800,
   infinite: false,
-  speed: 300,
+  speed: 800,
   slidesToShow: 1,
   slidesToScroll: 1,
 

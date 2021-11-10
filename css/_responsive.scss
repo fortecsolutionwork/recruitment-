@@ -113,15 +113,6 @@
   header .humburger-menu {
     top: 21px;
   }
-  .banner > div {
-    opacity: 0;
-    transform: translateY(50vh);
-    transition: all 2s ease;
-  }
-  .slick-active .banner > div {
-    opacity: 1;
-    transform: translateY(0);
-  }
   .our_clients .container-fluid .row > div img {
     max-width: 100px;
   }
@@ -171,15 +162,6 @@
   .banner .disc {
     font-size: 1.2rem;
     max-width: 100%;
-  }
-  .banner > div {
-    opacity: 0;
-    transform: translateY(30vh);
-    transition: all 3s ease;
-  }
-  .slick-active .banner > div {
-    opacity: 1;
-    transform: translateY(0);
   }
   .banner form input {
     flex: 0 0 70%;

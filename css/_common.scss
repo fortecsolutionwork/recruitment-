@@ -134,15 +134,15 @@ h2 {
 //   right: 0 !important;
 // }
 
-.banner > div {
-  opacity: 0;
-  transform: translateY(50vh);
-  transition: all 3s ease;
-}
-.slick-active .banner > div {
-  opacity: 1;
-  transform: translateY(0);
-}
+// .banner > div {
+//   opacity: 0;
+//   transform: translateY(50vh);
+//   transition: all 3s ease;
+// }
+// .slick-active .banner > div {
+//   opacity: 1;
+//   transform: translateY(0);
+// }
 // .our_clients
 .our_clients {
   padding: 20px 0;

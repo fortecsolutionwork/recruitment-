@@ -254,20 +254,6 @@ h2 span {
   border-radius: 0 4rem 4rem 0;
 }
 
-.banner > div {
-  opacity: 0;
-  -webkit-transform: translateY(50vh);
-          transform: translateY(50vh);
-  -webkit-transition: all 3s ease;
-  transition: all 3s ease;
-}
-
-.slick-active .banner > div {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
 .our_clients {
   padding: 20px 0;
 }
@@ -930,18 +916,6 @@ h2 span {
   header .humburger-menu {
     top: 21px;
   }
-  .banner > div {
-    opacity: 0;
-    -webkit-transform: translateY(50vh);
-            transform: translateY(50vh);
-    -webkit-transition: all 2s ease;
-    transition: all 2s ease;
-  }
-  .slick-active .banner > div {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
   .our_clients .container-fluid .row > div img {
     max-width: 100px;
   }
@@ -998,18 +972,6 @@ h2 span {
   .banner .disc {
     font-size: 1.2rem;
     max-width: 100%;
-  }
-  .banner > div {
-    opacity: 0;
-    -webkit-transform: translateY(30vh);
-            transform: translateY(30vh);
-    -webkit-transition: all 3s ease;
-    transition: all 3s ease;
-  }
-  .slick-active .banner > div {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
   }
   .banner form input {
     -webkit-box-flex: 0;
