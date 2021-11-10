@@ -256,10 +256,10 @@ h2 span {
 
 .banner > div {
   opacity: 0;
-  -webkit-transform: translateY(100vh);
-          transform: translateY(100vh);
-  -webkit-transition: all 2s ease;
-  transition: all 2s ease;
+  -webkit-transform: translateY(50vh);
+          transform: translateY(50vh);
+  -webkit-transition: all 3s ease;
+  transition: all 3s ease;
 }
 
 .slick-active .banner > div {
@@ -557,6 +557,10 @@ h2 span {
 .testimonials {
   padding: 11rem 0;
   background: #f0eeee;
+}
+
+.testimonials .heading {
+  margin-bottom: 5rem;
 }
 
 .testimonials .container-fluid .row > div {

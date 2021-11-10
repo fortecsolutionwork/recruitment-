@@ -136,8 +136,8 @@ h2 {
 
 .banner > div {
   opacity: 0;
-  transform: translateY(100vh);
-  transition: all 2s ease;
+  transform: translateY(50vh);
+  transition: all 3s ease;
 }
 .slick-active .banner > div {
   opacity: 1;
@@ -388,6 +388,11 @@ h2 {
 .testimonials {
   padding: 11rem 0;
   background: #f0eeee;
+
+  .heading {
+    margin-bottom: 5rem;
+  }
+
   .container-fluid {
     .row {
       > div {
