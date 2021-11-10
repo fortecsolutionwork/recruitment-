@@ -1,0 +1,18 @@
+@mixin roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+@mixin noto {
+  font-family: "Noto Sans", sans-serif;
+}
+
+@mixin heading {
+  text-align: center;
+  line-height: 1em;
+  letter-spacing: 0.4px;
+  text-transform: capitalize;
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  @include roboto();
+}

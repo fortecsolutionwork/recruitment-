@@ -1,0 +1,64 @@
+@import "variable";
+
+header {
+  padding: 20px 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 988;
+  .logo {
+    font-size: 3rem;
+    font-weight: 600;
+    color: $white;
+  }
+  .navbar {
+    justify-content: flex-end;
+    li {
+      margin-left: 5rem;
+      a {
+        font-size: 2rem;
+        color: $white;
+
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+
+  .humburger-menu {
+    position: fixed;
+    top: 18px;
+    display: none;
+    z-index: 9999;
+    right: 15px;
+  }
+  .humburger-menu span {
+    width: 23px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 60px;
+    display: block;
+    margin-bottom: 5px;
+    transition: all 0.3s linear;
+  }
+
+  .humburger-menu.active .humburger-span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin-top: 7px;
+    background-color: #fff;
+  }
+  .humburger-menu.active .humburger-span:nth-child(2) {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+    opacity: 0;
+    background-color: #fff;
+  }
+  .humburger-menu.active .humburger-span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    margin-top: -15px;
+    background-color: #fff;
+  }
+}

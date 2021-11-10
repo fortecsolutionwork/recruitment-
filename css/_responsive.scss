@@ -1,0 +1,272 @@
+@media (max-width: 1440px) {
+  .banner h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+  .banner .disc {
+    font-size: 1.5rem;
+  }
+  .banner form input {
+    flex: 0 0 35%;
+    max-width: 35%;
+  }
+  .our_clients .container-fluid .row > div {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+  .jobs .row .Card {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+  .about_us .container-fluid .row > div:nth-child(2) .heading {
+    padding-top: 0;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  .about_us .container-fluid .row > div:nth-child(2) .disc {
+    font-size: 1.5rem;
+  }
+  .newsletter .form-subscribe .input-group input {
+    flex: 0 0 38%;
+    max-width: 38%;
+  }
+  .about_us .container-fluid .row ul li {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .our_clients .container-fluid .row > div img {
+    max-width: 150px;
+  }
+  .banner {
+    min-height: 60vh;
+  }
+  .about_us .container-fluid .row > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 0;
+  }
+  .about_us .container-fluid .row > div .thumb {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+  .about_us .container-fluid .row ul li {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  header .navbar {
+    background: #0c50ca;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0 !important;
+    padding-top: 60px;
+    transition: all 0.3s linear;
+    clip-path: circle(50px at 90% -20%);
+    -webkit-clip-path: circle(50px at 90% -10%);
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+    z-index: 999;
+    padding: 20%;
+    padding-top: 30%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  header .navbar.active {
+    clip-path: circle(1300px at 90% -10%);
+    -webkit-clip-path: circle(2000px at 90% -10%);
+  }
+  header .navbar li a {
+    font-size: 20px !important;
+    color: #fff !important;
+    padding: 0;
+  }
+  header .navbar li {
+    margin-left: 0;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.23);
+    padding-bottom: 16px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  header .navbar .li:last-child {
+    border: none;
+  }
+  header .humburger-menu {
+    display: block;
+    top: 21px;
+    right: 5% !important;
+    position: fixed;
+  }
+  header {
+    padding: 10px 0;
+  }
+  header .humburger-menu {
+    top: 21px;
+  }
+  .banner > div {
+    opacity: 0;
+    transform: translateY(50vh);
+    transition: all 2s ease;
+  }
+  .slick-active .banner > div {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .our_clients .container-fluid .row > div img {
+    max-width: 100px;
+  }
+  .jobs .row .Card {
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+  .our_services .Card {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 50px;
+  }
+  .newsletter .form-subscribe .input-group input {
+    flex: 0 0 80%;
+    max-width: 80%;
+  }
+  .testimonials .container-fluid .row > div .user_message {
+    max-width: 100%;
+    font-size: 1.5rem;
+  }
+  .footer-section .footer-cta .row > div {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+  .footer-social-icon {
+    margin: 40px 0;
+  }
+  header .navbar li {
+    width: 100%;
+    text-align: center;
+  }
+  header .navbar {
+    background: $secondary-color;
+    height: 72vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner {
+    min-height: 100vh;
+  }
+  .banner h1 {
+    font-size: 2rem;
+    max-width: 100%;
+  }
+
+  .banner .disc {
+    font-size: 1.2rem;
+    max-width: 100%;
+  }
+  .banner > div {
+    opacity: 0;
+    transform: translateY(30vh);
+    transition: all 3s ease;
+  }
+  .slick-active .banner > div {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .banner form input {
+    flex: 0 0 70%;
+    max-width: 70%;
+  }
+  h2 {
+    font-size: 2.5rem;
+    line-height: 1.3em;
+  }
+  .jobs .row {
+    padding-top: 4rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+  .jobs .row .Card {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .jobs,
+  .about_us,
+  .our_services,
+  .case-study,
+  .testimonials {
+    padding: 6rem 0;
+  }
+  .about_us .container-fluid .row > div:nth-child(2) {
+    padding-left: 0;
+  }
+  .about_us .container-fluid .row > div .thumb {
+    margin-bottom: 2rem;
+  }
+  .about_us .container-fluid .row > div:nth-child(2) .disc {
+    font-size: 1.4rem;
+  }
+  .about_us .container-fluid .row ul li {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 5px;
+  }
+  .about_us .container-fluid .row ul {
+    padding-top: 1rem;
+  }
+  .our_services .Card {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .newsletter .form-subscribe .input-group input {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .newsletter .form-subscribe .input-group-btn {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .newsletter .form-subscribe .input-group .input-group-btn button,
+  .banner form button {
+    font-size: 1.4rem;
+    padding: 0 20px;
+    width: auto;
+  }
+  .newsletter .form-subscribe .input-group {
+    justify-content: flex-start;
+  }
+  .case-study .container-fluid .row {
+    padding-top: 1rem;
+  }
+  .single-cta {
+    display: flex;
+  }
+  .our_clients .container-fluid .row {
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+  }
+  .our_clients .container-fluid .row > div {
+    flex: 0 0 35%;
+    max-width: 35%;
+  }
+  //   .our_clients .container-fluid .row::-webkit-scrollbar {
+  //     display: none;
+  //   }
+
+  //   .our_clients .container-fluid .row {
+  //     -ms-overflow-style: none; /* IE and Edge */
+  //     scrollbar-width: none; /* Firefox */
+  //   }
+}
