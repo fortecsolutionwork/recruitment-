@@ -24,7 +24,7 @@ $(".testimonials-slider").slick({
 // banner-slider
 
 $(".banner-slider").slick({
-  dots: false,
+  dots: true,
   arrows:false,
   autoplay:true,
   autoplaySpeed:800,

@@ -126,6 +126,17 @@ h2 {
   }
 }
 
+.banner-slider .slick-dots li button:before,
+.banner-slider .slick-dots li.slick-active button:before {
+  color: #fff;
+}
+.banner-slider .slick-dots li button:before {
+  font-size: 15px;
+}
+.banner-slider .slick-dots {
+  bottom: 30px;
+}
+
 // .slick-prev {
 //   left: 0 !important;
 // }

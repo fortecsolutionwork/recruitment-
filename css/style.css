@@ -271,6 +271,19 @@ h2 span {
   border-radius: 0 4rem 4rem 0;
 }
 
+.banner-slider .slick-dots li button:before,
+.banner-slider .slick-dots li.slick-active button:before {
+  color: #fff;
+}
+
+.banner-slider .slick-dots li button:before {
+  font-size: 15px;
+}
+
+.banner-slider .slick-dots {
+  bottom: 30px;
+}
+
 .our_clients {
   padding: 20px 0;
 }
