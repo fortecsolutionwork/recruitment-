@@ -28,7 +28,7 @@ $(".banner-slider").slick({
   arrows:false,
   autoplay:true,
   autoplaySpeed:800,
-  infinite: false,
+  infinite: true,
   speed: 800,
   slidesToShow: 1,
   slidesToScroll: 1,
