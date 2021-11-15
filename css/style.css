@@ -595,6 +595,7 @@ h2 span {
           flex: 0 0 100%;
   max-width: 100%;
   margin-bottom: 5px;
+  font-size: 20px;
 }
 
 .about_us .container-fluid .row ul li i {
