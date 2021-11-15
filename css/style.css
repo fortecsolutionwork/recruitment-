@@ -567,10 +567,16 @@ h2 span {
 
 .about_us .container-fluid .row > div:nth-child(2) .disc {
   font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.about_us .container-fluid .row > div:nth-child(2) .title {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #f71634;
 }
 
 .about_us .container-fluid .row ul {
-  padding-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
