@@ -562,6 +562,35 @@ h2 span {
   z-index: 2;
 }
 
+.jobs ul.service-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.jobs ul.service-list li {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  max-width: 30%;
+  font-size: 25px;
+  margin-bottom: 14px;
+  list-style: square;
+  color: #f71634;
+  margin-left: 35px;
+}
+
+.jobs ul.service-list li span {
+  color: #2a2a68;
+  font-weight: 500;
+}
+
 .about_us {
   padding: 11rem 0;
 }
@@ -571,7 +600,7 @@ h2 span {
 }
 
 .about_us .container-fluid .row > div:nth-child(2) .heading {
-  padding-top: 7rem;
+  padding-top: 0;
   text-align: left;
 }
 
@@ -1388,6 +1417,12 @@ h2 span {
   .contact-us-form .contact-address .address-info {
     max-width: 70%;
   }
+  .jobs ul.service-list li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 28%;
+            flex: 0 0 28%;
+    max-width: 28%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1691,6 +1726,12 @@ h2 span {
   }
   .contact-us-form .contact-address {
     padding: 50px 0;
+  }
+  .jobs ul.service-list li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

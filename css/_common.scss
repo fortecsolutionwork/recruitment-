@@ -403,6 +403,26 @@ h2 {
       }
     }
   }
+  ul.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    justify-content: center;
+  }
+  ul.service-list li {
+    flex: 0 0 30%;
+    max-width: 30%;
+    font-size: 25px;
+    margin-bottom: 14px;
+    list-style: square;
+    color: #f71634;
+    margin-left: 35px;
+
+    span {
+      color: $secondary-color;
+      font-weight: 500;
+    }
+  }
 }
 
 // about us
@@ -413,7 +433,7 @@ h2 {
       > div:nth-child(2) {
         padding-left: 5rem;
         .heading {
-          padding-top: 7rem;
+          padding-top: 0;
           text-align: left;
         }
         .disc {

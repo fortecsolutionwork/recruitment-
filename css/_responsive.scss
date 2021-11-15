@@ -90,6 +90,10 @@
   .contact-us-form .contact-address .address-info {
     max-width: 70%;
   }
+  .jobs ul.service-list li {
+    flex: 0 0 28%;
+    max-width: 28%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -352,5 +356,9 @@
   }
   .contact-us-form .contact-address {
     padding: 50px 0;
+  }
+  .jobs ul.service-list li {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
