@@ -73,6 +73,10 @@ header.fixed {
   }
   .navbar li a {
     color: #000;
+
+    &:hover {
+      color: #f71634;
+    }
   }
   .humburger-menu span {
     background-color: #000;

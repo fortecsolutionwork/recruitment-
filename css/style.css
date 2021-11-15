@@ -86,6 +86,10 @@ header.fixed .navbar li a {
   color: #000;
 }
 
+header.fixed .navbar li a:hover {
+  color: #f71634;
+}
+
 header.fixed .humburger-menu span {
   background-color: #000;
 }
@@ -184,6 +188,152 @@ h2 {
 
 h2 span {
   color: #f71634;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 1000;
+}
+
+.preloader #mdiv {
+  background: #f7163426;
+  width: 100vw;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.preloader #mdiv .circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.preloader #mdiv .circle img {
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
+  max-width: 60%;
+}
+
+.preloader #mdiv .circle h4 {
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
+  max-width: 60%;
+}
+
+.preloader #mdiv .circle .border {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: transparent;
+  border-radius: 50%;
+  border: 2px solid #f71634 !important;
+  border-right: 2px solid transparent !important;
+  -webkit-animation-name: Rotate;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: Rotate;
+  -moz-animation-duration: 2s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: Rotate;
+  -ms-animation-duration: 2s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+}
+
+@-webkit-keyframes Rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
 }
 
 .banner {
@@ -810,6 +960,216 @@ h2 span {
   font-size: 4rem;
 }
 
+.about_banner {
+  position: relative;
+}
+
+.about_banner::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f71634;
+  opacity: 0.4;
+}
+
+.about_banner img.BgImg {
+  max-height: 470px;
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about_banner h1 {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  font-size: 80px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-weight: bold;
+}
+
+.aboutInfo {
+  padding: 100px 0;
+}
+
+.aboutInfo h2 {
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.aboutInfo .info {
+  max-width: 62%;
+}
+
+.aboutInfo .img-animated {
+  animation: animatated 2s ease-in-out infinite alternate-reverse both;
+  max-width: 100%;
+}
+
+@-webkit-keyframes animatated {
+  0% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  100% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+}
+
+@keyframes animatated {
+  0% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  100% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+}
+
+.aboutInfo ul {
+  list-style: disclosure-closed;
+  padding-left: 26px;
+}
+
+.aboutInfo ul li {
+  font-size: 2rem;
+}
+
+.our_achievement {
+  padding: 180px 0;
+  background-image: url("../images/achievement.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  background-position: center;
+}
+
+.our_achievement::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.7;
+}
+
+.our_achievement .container-fluid {
+  position: relative;
+}
+
+.our_achievement .container-fluid .row > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.our_achievement .container-fluid .row > div img {
+  margin-right: 20px;
+}
+
+.our_achievement .container-fluid .row > div p {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0;
+  line-height: 1.2em;
+}
+
+.our_achievement .container-fluid .row > div span {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.our_story {
+  padding: 100px 0;
+}
+
+.our_story .container-fluid .row > div:first-child img {
+  max-height: 450px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.our_story .info {
+  max-width: 90%;
+  margin: 50px auto 40px;
+  text-align: center;
+}
+
+.our_story .owner {
+  text-align: center;
+}
+
+.our_story .owner .name {
+  font-size: 2.5rem;
+  color: #f71634;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+.our_story .owner img {
+  max-width: 100px;
+}
+
+.whyChose_us {
+  padding: 30px 0 100px;
+}
+
+.whyChose_us .title-info {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.whyChose_us .container-fluid .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.whyChose_us .container-fluid .row > div:first-child img {
+  max-width: 100%;
+}
+
+.whyChose_us .container-fluid .row ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+}
+
+.whyChose_us .container-fluid .row ul li i {
+  margin-right: 25px;
+  font-size: 6rem;
+  color: #f71634;
+}
+
+.whyChose_us .container-fluid .row ul li p {
+  max-width: 40%;
+}
+
 @media (max-width: 1440px) {
   .banner h1 {
     font-size: 4rem;
@@ -857,6 +1217,43 @@ h2 span {
             flex: 0 0 50%;
     max-width: 50%;
     margin-bottom: 0;
+  }
+  .our_achievement .container-fluid .row > div img {
+    max-width: 50px;
+  }
+  .our_achievement .container-fluid .row > div p {
+    font-size: 3rem;
+  }
+  .our_achievement .container-fluid .row > div span {
+    font-size: 1.6rem;
+  }
+  .whyChose_us .container-fluid .row ul li p {
+    max-width: 50%;
+  }
+  .whyChose_us .container-fluid .row ul li i {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  .our_achievement .container-fluid .row > div span {
+    font-size: 1.2rem;
+  }
+  .our_achievement .container-fluid .row > div img {
+    max-width: 40px;
+    margin-right: 10px;
+  }
+  .our_achievement .container-fluid .row > div span {
+    font-size: 1.2rem;
+  }
+  .whyChose_us .container-fluid .row ul li {
+    margin-bottom: 15px;
+  }
+  .whyChose_us .container-fluid .row ul li i {
+    font-size: 4rem;
+  }
+  .whyChose_us .container-fluid .row ul li p {
+    max-width: 60%;
   }
 }
 
@@ -989,6 +1386,41 @@ h2 span {
     background: #2a2a68;
     height: 72vh;
   }
+  section.aboutInfo .container-fluid .row > div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 50px;
+  }
+  .our_story .container-fluid .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .our_story .container-fluid .row > div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+  .our_story .container-fluid .row > div:first-child {
+    margin-top: 50px;
+  }
+  .whyChose_us .container-fluid .row > div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .whyChose_us .container-fluid .row > div:first-child {
+    margin-bottom: 50px;
+  }
+  .whyChose_us .container-fluid .row ul li p {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1104,6 +1536,31 @@ h2 span {
   }
   header .navbar {
     height: 80vh;
+  }
+  .about_banner h1 {
+    font-size: 30px;
+  }
+  .aboutInfo {
+    padding: 50 px 0;
+  }
+  .aboutInfo .info {
+    max-width: 100%;
+  }
+  .aboutInfo ul li {
+    font-size: 1.8rem;
+  }
+  .our_achievement .container-fluid .row > div {
+    margin-bottom: 50px;
+  }
+  .our_achievement .container-fluid .row > div img {
+    max-width: 50px;
+    margin-right: 20px;
+  }
+  .our_story {
+    padding: 20px 0 50px;
+  }
+  .whyChose_us {
+    padding: 30px 0 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */

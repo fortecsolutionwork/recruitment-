@@ -59,6 +59,152 @@ h2 {
     color: $primary-color;
   }
 }
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 1000;
+}
+
+.preloader #mdiv {
+  background: #f7163426;
+  width: 100vw;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.preloader #mdiv .circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.preloader #mdiv .circle img {
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
+  max-width: 60%;
+}
+
+.preloader #mdiv .circle h4 {
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
+  max-width: 60%;
+}
+.preloader #mdiv .circle .border {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: transparent;
+  border-radius: 50%;
+  border: 2px solid #f71634 !important;
+  border-right: 2px solid transparent !important;
+  -webkit-animation-name: Rotate;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: Rotate;
+  -moz-animation-duration: 2s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: Rotate;
+  -ms-animation-duration: 2s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+}
+
+@-webkit-keyframes Rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
 // banner
 .banner {
   min-height: 100vh;
@@ -599,5 +745,194 @@ h2 {
   .footer-logo span {
     color: #fff;
     font-size: 4rem;
+  }
+}
+
+// about us
+.about_banner {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f71634;
+    opacity: 0.4;
+  }
+
+  img.BgImg {
+    max-height: 470px;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  h1 {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    font-size: 80px;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+  }
+}
+
+// aboutInfo
+
+.aboutInfo {
+  padding: 100px 0;
+  h2 {
+    text-align: left;
+    text-transform: capitalize;
+  }
+
+  .info {
+    max-width: 62%;
+  }
+  .img-animated {
+    animation: animatated 2s ease-in-out infinite alternate-reverse both;
+    max-width: 100%;
+  }
+  @keyframes animatated {
+    0% {
+      transform: translateY(30px);
+    }
+    100% {
+      transform: translateY(-30px);
+    }
+  }
+  ul {
+    list-style: disclosure-closed;
+    padding-left: 26px;
+    li {
+      font-size: 2rem;
+    }
+  }
+}
+
+// .our_achievement
+.our_achievement {
+  padding: 180px 0;
+  background-image: url("../images/achievement.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  background-position: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.7;
+  }
+
+  .container-fluid {
+    position: relative;
+    .row {
+      > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          margin-right: 20px;
+        }
+
+        p {
+          font-size: 4rem;
+          font-weight: bold;
+          color: #fff;
+          margin-bottom: 0;
+          line-height: 1.2em;
+        }
+        span {
+          font-size: 1.8rem;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+// our story
+
+.our_story {
+  padding: 100px 0;
+
+  .container-fluid {
+    .row {
+      > div:first-child {
+        img {
+          max-height: 450px;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  .info {
+    max-width: 90%;
+    margin: 50px auto 40px;
+    text-align: center;
+  }
+  .owner {
+    text-align: center;
+    .name {
+      font-size: 2.5rem;
+      color: #f71634;
+      font-weight: bold;
+      margin-bottom: 0;
+      margin-top: 20px;
+    }
+    img {
+      max-width: 100px;
+    }
+  }
+}
+
+// why chose us
+
+.whyChose_us {
+  padding: 30px 0 100px;
+
+  .title-info {
+    text-align: center;
+    margin-bottom: 70px;
+  }
+
+  .container-fluid {
+    .row {
+      align-items: center;
+      > div:first-child {
+        img {
+          max-width: 100%;
+        }
+      }
+      ul {
+        li {
+          display: flex;
+          align-items: center;
+          margin-bottom: 40px;
+
+          i {
+            margin-right: 25px;
+            font-size: 6rem;
+            color: #f71634;
+          }
+
+          p {
+            max-width: 40%;
+          }
+        }
+      }
+    }
   }
 }

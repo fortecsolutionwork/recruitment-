@@ -36,6 +36,43 @@
     max-width: 50%;
     margin-bottom: 0;
   }
+  .our_achievement .container-fluid .row > div img {
+    max-width: 50px;
+  }
+  .our_achievement .container-fluid .row > div p {
+    font-size: 3rem;
+  }
+  .our_achievement .container-fluid .row > div span {
+    font-size: 1.6rem;
+  }
+  .whyChose_us .container-fluid .row ul li p {
+    max-width: 50%;
+  }
+  .whyChose_us .container-fluid .row ul li i {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  .our_achievement .container-fluid .row > div span {
+    font-size: 1.2rem;
+  }
+  .our_achievement .container-fluid .row > div img {
+    max-width: 40px;
+    margin-right: 10px;
+  }
+  .our_achievement .container-fluid .row > div span {
+    font-size: 1.2rem;
+  }
+  .whyChose_us .container-fluid .row ul li {
+    margin-bottom: 15px;
+  }
+  .whyChose_us .container-fluid .row ul li i {
+    font-size: 4rem;
+  }
+  .whyChose_us .container-fluid .row ul li p {
+    max-width: 60%;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -148,6 +185,32 @@
     background: $secondary-color;
     height: 72vh;
   }
+  section.aboutInfo .container-fluid .row > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 50px;
+  }
+  .our_story .container-fluid .row {
+    flex-direction: column-reverse;
+  }
+  .our_story .container-fluid .row > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+  .our_story .container-fluid .row > div:first-child {
+    margin-top: 50px;
+  }
+  .whyChose_us .container-fluid .row > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .whyChose_us .container-fluid .row > div:first-child {
+    margin-bottom: 50px;
+  }
+  .whyChose_us .container-fluid .row ul li p {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -245,5 +308,30 @@
   }
   header .navbar {
     height: 80vh;
+  }
+  .about_banner h1 {
+    font-size: 30px;
+  }
+  .aboutInfo {
+    padding: 50 px 0;
+  }
+  .aboutInfo .info {
+    max-width: 100%;
+  }
+  .aboutInfo ul li {
+    font-size: 1.8rem;
+  }
+  .our_achievement .container-fluid .row > div {
+    margin-bottom: 50px;
+  }
+  .our_achievement .container-fluid .row > div img {
+    max-width: 50px;
+    margin-right: 20px;
+  }
+  .our_story {
+    padding: 20px 0 50px;
+  }
+  .whyChose_us {
+    padding: 30px 0 40px;
   }
 }
