@@ -7,9 +7,7 @@ header {
   top: 0;
   z-index: 988;
   .logo {
-    font-size: 3rem;
-    font-weight: 600;
-    color: $white;
+    max-width: 150px;
   }
   .navbar {
     justify-content: flex-end;
@@ -69,7 +67,7 @@ header.fixed {
   background: #fff;
 
   .logo {
-    color: #000;
+    filter: invert(1);
   }
   .navbar li a {
     color: #000;

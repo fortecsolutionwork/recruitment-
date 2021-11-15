@@ -8,9 +8,7 @@ header {
 }
 
 header .logo {
-  font-size: 3rem;
-  font-weight: 600;
-  color: #fff;
+  max-width: 150px;
 }
 
 header .navbar {
@@ -79,7 +77,8 @@ header.fixed {
 }
 
 header.fixed .logo {
-  color: #000;
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 header.fixed .navbar li a {
@@ -99,6 +98,17 @@ header.fixed .humburger-menu span {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 ul {
@@ -970,6 +980,19 @@ h2 span {
   font-size: 4rem;
 }
 
+.footer-section .text-center.text-lg-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%;
+}
+
 .about_banner {
   position: relative;
 }
@@ -999,10 +1022,11 @@ h2 span {
   top: 50%;
   left: 50%;
   color: #fff;
-  font-size: 80px;
+  font-size: 5vw;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-weight: bold;
+  text-transform: capitalize;
 }
 
 .aboutInfo {
@@ -1059,7 +1083,6 @@ h2 span {
   background-image: url("../images/achievement.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   position: relative;
   background-position: center;
 }
@@ -1180,6 +1203,77 @@ h2 span {
   max-width: 40%;
 }
 
+.contact-us-form {
+  padding: 100px 0;
+}
+
+.contact-us-form .title-info {
+  margin-bottom: 70px;
+}
+
+.contact-us-form .container-fluid .row > div:first-child {
+  padding-right: 50px;
+}
+
+.contact-us-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-us-form .form-group input,
+.contact-us-form .form-group textarea {
+  width: 100%;
+  border: 1px solid #cccc;
+  padding: 15px 20px;
+  font-size: 18px;
+}
+
+.contact-us-form .form-group input:focus,
+.contact-us-form .form-group input:focus-visible,
+.contact-us-form .form-group textarea:focus,
+.contact-us-form .form-group textarea:focus-visible {
+  outline: 1px solid #f71634 !important;
+}
+
+.contact-us-form .contact-address {
+  background: #2a2a68;
+  height: 100%;
+  padding: 50px;
+  text-align: center;
+  color: #fff;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.contact-us-form .contact-address h4 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.contact-us-form .contact-address p {
+  color: #ffffffa3;
+  margin: 0 auto;
+}
+
+.contact-us-form .contact-address .address-info {
+  max-width: 50%;
+}
+
+.contact-us-form button {
+  background: #2a2a68;
+  border: none;
+  padding: 20px;
+  min-width: 200px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.contact-us-form button:hover {
+  background-color: #f71634;
+}
+
 @media (max-width: 1440px) {
   .banner h1 {
     font-size: 4rem;
@@ -1277,6 +1371,9 @@ h2 span {
   .about_us .container-fluid .row > div .thumb {
     width: 100%;
     margin-bottom: 5rem;
+  }
+  .contact-us-form .contact-address .address-info {
+    max-width: 70%;
   }
 }
 
@@ -1418,6 +1515,19 @@ h2 span {
   .whyChose_us .container-fluid .row ul li p {
     max-width: 100%;
   }
+  .contact-us-form .container-fluid .row > div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .contact-us-form .container-fluid .row > div:first-child {
+    padding-right: 0;
+    padding-bottom: 60px;
+  }
+  .contact-us-form .contact-address .group:nth-child(2) {
+    margin: 40px 0;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1551,6 +1661,23 @@ h2 span {
   }
   .whyChose_us {
     padding: 30px 0 40px;
+  }
+  .contact-us-form {
+    padding: 50px 0;
+  }
+  .contact-us-form .title-info {
+    margin-bottom: 40px;
+  }
+  .contact-us-form .container-fluid .row > div:first-child {
+    padding-bottom: 40px;
+  }
+  .contact-us-form button {
+    padding: 12px;
+    min-width: 190px;
+    font-size: 16px;
+  }
+  .contact-us-form .contact-address {
+    padding: 50px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
