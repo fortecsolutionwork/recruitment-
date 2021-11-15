@@ -993,6 +993,12 @@ h2 span {
   max-width: 100%;
 }
 
+.footer-section .single-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .about_banner {
   position: relative;
 }
