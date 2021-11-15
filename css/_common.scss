@@ -415,11 +415,13 @@ h2 {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
+        list-style: circle;
+        padding-left: 20px;
 
         li {
-          flex: 0 0 33.33%;
-          max-width: 33.33%;
-          margin-bottom: 1rem;
+          flex: 0 0 100%;
+          max-width: 100%;
+          margin-bottom: 5px;
           i {
             font-size: 2rem;
             color: $secondary-color;
@@ -427,6 +429,7 @@ h2 {
           span {
             font-size: 2rem;
             color: $secondary-color;
+            font-weight: 600;
           }
         }
       }

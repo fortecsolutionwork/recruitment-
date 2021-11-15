@@ -579,14 +579,16 @@ h2 span {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  list-style: circle;
+  padding-left: 20px;
 }
 
 .about_us .container-fluid .row ul li {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 33.33%;
-          flex: 0 0 33.33%;
-  max-width: 33.33%;
-  margin-bottom: 1rem;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 5px;
 }
 
 .about_us .container-fluid .row ul li i {
@@ -597,6 +599,7 @@ h2 span {
 .about_us .container-fluid .row ul li span {
   font-size: 2rem;
   color: #2a2a68;
+  font-weight: 600;
 }
 
 .our_services {
@@ -1211,13 +1214,6 @@ h2 span {
             flex: 0 0 38%;
     max-width: 38%;
   }
-  .about_us .container-fluid .row ul li {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
-    max-width: 50%;
-    margin-bottom: 0;
-  }
   .our_achievement .container-fluid .row > div img {
     max-width: 50px;
   }
@@ -1274,12 +1270,6 @@ h2 span {
   .about_us .container-fluid .row > div .thumb {
     width: 100%;
     margin-bottom: 5rem;
-  }
-  .about_us .container-fluid .row ul li {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 30%;
-            flex: 0 0 30%;
-    max-width: 30%;
   }
 }
 
@@ -1474,13 +1464,6 @@ h2 span {
   }
   .about_us .container-fluid .row > div:nth-child(2) .disc {
     font-size: 1.4rem;
-  }
-  .about_us .container-fluid .row ul li {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
-    max-width: 100%;
-    margin-bottom: 5px;
   }
   .about_us .container-fluid .row ul {
     padding-top: 1rem;

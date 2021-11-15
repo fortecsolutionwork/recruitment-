@@ -31,11 +31,7 @@
     flex: 0 0 38%;
     max-width: 38%;
   }
-  .about_us .container-fluid .row ul li {
-    flex: 0 0 50%;
-    max-width: 50%;
-    margin-bottom: 0;
-  }
+
   .our_achievement .container-fluid .row > div img {
     max-width: 50px;
   }
@@ -90,10 +86,6 @@
   .about_us .container-fluid .row > div .thumb {
     width: 100%;
     margin-bottom: 5rem;
-  }
-  .about_us .container-fluid .row ul li {
-    flex: 0 0 30%;
-    max-width: 30%;
   }
 }
 
@@ -262,11 +254,7 @@
   .about_us .container-fluid .row > div:nth-child(2) .disc {
     font-size: 1.4rem;
   }
-  .about_us .container-fluid .row ul li {
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-bottom: 5px;
-  }
+
   .about_us .container-fluid .row ul {
     padding-top: 1rem;
   }
